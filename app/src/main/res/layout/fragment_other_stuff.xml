@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:theme="@style/Theme.MaterialComponents.Light"
+    tools:context=".OtherStuffFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:gravity="center"
+            android:text="@string/what_is_api"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/scroll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView1"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView1"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView1"
+            app:showYouTubeButton="true"
+            app:videoId="E0Qqpn8ymko" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView4"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/credits_codewithharry"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/scroll1"
+            app:layout_constraintStart_toStartOf="@+id/scroll1"
+            app:layout_constraintTop_toBottomOf="@+id/scroll1"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView2"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:gravity="center"
+            android:text="@string/scripting_vs_programming"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView4" />
+
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/scroll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView2"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView2"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView2"
+            app:showYouTubeButton="true"
+            app:videoId="Bvt_YYF1v18" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/credits_technical_sagar"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/scroll2"
+            app:layout_constraintStart_toStartOf="@+id/scroll2"
+            app:layout_constraintTop_toBottomOf="@+id/scroll2"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:gravity="center"
+            android:text="@string/_5_steps_to_improve_programming_skills"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView3" />
+
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/scroll3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView5"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView5"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView5"
+            app:showYouTubeButton="true"
+            app:videoId="jyiyrmsqyBk" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView6"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/credits_telusko"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/scroll3"
+            app:layout_constraintStart_toStartOf="@+id/scroll3"
+            app:layout_constraintTop_toBottomOf="@+id/scroll3"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:gravity="center"
+            android:text="@string/story_of_a_self_taught_developer"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView6" />
+
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/scroll4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView7"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView7"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView7"
+            app:showYouTubeButton="true"
+            app:videoId="Q4Zu3NipqFU" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView8"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/credits_anuj_bhaiya"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/scroll4"
+            app:layout_constraintStart_toStartOf="@+id/scroll4"
+            app:layout_constraintTop_toBottomOf="@+id/scroll4"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:gravity="center"
+            android:text="@string/startup_vs_mnc"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView8" />
+
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/scroll5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView9"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView9"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView9"
+            app:showYouTubeButton="true"
+            app:videoId="Bn3TN4hy4hY" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView10"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/credits_anuj_bhaiya"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/scroll5"
+            app:layout_constraintStart_toStartOf="@+id/scroll5"
+            app:layout_constraintTop_toBottomOf="@+id/scroll5"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView11"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:gravity="center"
+            android:text="@string/programming_vs_coding"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView10" />
+
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/scroll6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView11"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView11"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView11"
+            app:showYouTubeButton="true"
+            app:videoId="6tZz6gr1h9E" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView12"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/credits_hitesh_choudhary"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/scroll6"
+            app:layout_constraintStart_toStartOf="@+id/scroll6"
+            app:layout_constraintTop_toBottomOf="@+id/scroll6"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:gravity="center"
+            android:text="@string/effective_trick_to_learn_programming"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView12" />
+
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/scroll7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView13"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView13"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView13"
+            app:showYouTubeButton="true"
+            app:videoId="3C7Db8cRuec" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView14"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/credits_codewithharry"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/scroll7"
+            app:layout_constraintStart_toStartOf="@+id/scroll7"
+            app:layout_constraintTop_toBottomOf="@+id/scroll7"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:gravity="center"
+            android:text="@string/cp_vs_development"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView14" />
+
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/scroll8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView15"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView15"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView15"
+            app:showYouTubeButton="true"
+            app:videoId="1h5nluTHJNM" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView16"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/credits_anuj_bhaiya"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/scroll8"
+            app:layout_constraintStart_toStartOf="@+id/scroll8"
+            app:layout_constraintTop_toBottomOf="@+id/scroll8"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:gravity="center"
+            android:text="@string/git_and_github"
+            android:textColor="@color/purple_500"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView16" />
+
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/scroll9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView17"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView17"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView17"
+            app:showYouTubeButton="true"
+            app:videoId="gwWKnnCMQ5c" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView18"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/credits_codewithharry"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/scroll9"
+            app:layout_constraintStart_toStartOf="@+id/scroll9"
+            app:layout_constraintTop_toBottomOf="@+id/scroll9"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:gravity="center"
+            android:text="@string/blockchain"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView18" />
+
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/scroll10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView19"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView19"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView19"
+            app:showYouTubeButton="true"
+            app:videoId="ENrjn-lD1e8" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView20"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/credits_dhruv_rathee"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/scroll10"
+            app:layout_constraintStart_toStartOf="@+id/scroll10"
+            app:layout_constraintTop_toBottomOf="@+id/scroll10"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView21"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:gravity="center"
+            android:text="@string/myths_and_facts_about_software_developer"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView20" />
+
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/scroll11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView21"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView21"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView21"
+            app:showYouTubeButton="true"
+            app:videoId="k4QUzr8wzwE" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView22"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/credits_anuj_bhaiya"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/scroll11"
+            app:layout_constraintStart_toStartOf="@+id/scroll11"
+            app:layout_constraintTop_toBottomOf="@+id/scroll11"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:gravity="center"
+            android:text="@string/oops_concept"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView22" />
+
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/scroll12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView23"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView23"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView23"
+            app:showYouTubeButton="true"
+            app:videoId="a199KZGMNxk" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView24"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/credits_anuj_bhaiya"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/scroll12"
+            app:layout_constraintStart_toStartOf="@+id/scroll12"
+            app:layout_constraintTop_toBottomOf="@+id/scroll12"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:gravity="center"
+            android:text="@string/what_is_server_less"
+            android:textColor="@color/purple_500"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView24" />
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/scroll13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView25"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView25"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView25"
+            app:showYouTubeButton="true"
+            app:videoId="4T9Gl0WY_Jk" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView26"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/credits_hitesh_choudhary"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/scroll13"
+            app:layout_constraintStart_toStartOf="@+id/scroll13"
+            app:layout_constraintTop_toBottomOf="@+id/scroll13"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:gravity="center"
+            android:text="@string/what_is_ngnix"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView26" />
+
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/scroll14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView27"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView27"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView27"
+            app:showYouTubeButton="true"
+            app:videoId="WuH0T9FHDZ4" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView28"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/credits_hitesh_choudhary"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/scroll14"
+            app:layout_constraintStart_toStartOf="@+id/scroll14"
+            app:layout_constraintTop_toBottomOf="@+id/scroll14"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:gravity="center"
+            android:text="@string/linux_commands_you_should_know"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView28" />
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/scroll15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView29"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView29"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView29"
+            app:showYouTubeButton="true"
+            app:videoId="jUklCapWN5w" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView30"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/credits_hitesh_choudhary"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/scroll15"
+            app:layout_constraintStart_toStartOf="@+id/scroll15"
+            app:layout_constraintTop_toBottomOf="@+id/scroll15"
+            tools:ignore="MissingConstraints" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:gravity="center"
+            android:text="@string/a_complete_linux_guide_for_beginners"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView30" />
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/scroll16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView31"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView31"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView31"
+            app:showYouTubeButton="true"
+            app:videoId="kN51_8-CHtQ" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView32"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/credits_hitesh_choudhary"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/scroll16"
+            app:layout_constraintStart_toStartOf="@+id/scroll16"
+            app:layout_constraintTop_toBottomOf="@+id/scroll16"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

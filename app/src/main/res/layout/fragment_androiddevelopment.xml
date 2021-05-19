@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:theme="@style/Theme.MaterialComponents.Light"
+    tools:actionBarNavMode="standard"
+    tools:context=".roadMap.androidDevelopment.AndroidDevelopment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView2"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="@dimen/_9ssp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:text="@string/analysis"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/materialTextView3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_9ssp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:text="@string/android_analysis"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/materialTextView2"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView2"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView2" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView4"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="@dimen/_9ssp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:text="@string/technologies"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.997"
+            app:layout_constraintStart_toEndOf="@+id/materialTextView2"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView2"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView3" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:text="@string/kotlin_recommended"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.072"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView4" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:text="@string/java"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView4"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView5" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:text="@string/flutter_dart"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView4"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView6" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:text="@string/react_native"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView7"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView4"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView7"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/kotlin_knowmore"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/readmore"
+            app:layout_constraintBottom_toBottomOf="@+id/materialTextView5"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toEndOf="@+id/materialTextView5"
+            app:layout_constraintTop_toTopOf="@+id/materialTextView5"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/java_knowmore"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/readmore"
+            app:layout_constraintBottom_toBottomOf="@+id/materialTextView6"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toEndOf="@+id/materialTextView6"
+            app:layout_constraintTop_toTopOf="@+id/materialTextView6"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/flutter_knowmore"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/readmore"
+            app:layout_constraintBottom_toBottomOf="@+id/materialTextView7"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toEndOf="@+id/materialTextView7"
+            app:layout_constraintTop_toTopOf="@+id/materialTextView7"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/reactnative_knowmore"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/readmore"
+            app:layout_constraintBottom_toBottomOf="@+id/materialTextView8"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toEndOf="@+id/materialTextView8"
+            app:layout_constraintTop_toTopOf="@+id/materialTextView8"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView9"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="@dimen/_9ssp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:text="@string/tools_required"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView4"
+            app:layout_constraintHorizontal_bias="0.997"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView4"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView8" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:text="@string/android_studio"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView9"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView9"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/androidstudio_knowmore"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/readmore"
+            app:layout_constraintBottom_toBottomOf="@+id/materialTextView10"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toEndOf="@+id/materialTextView10"
+            app:layout_constraintTop_toTopOf="@+id/materialTextView10"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView14"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/roadmap_overview"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView9"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView10" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView14"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView14">
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtubePlayerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:keepScreenOn="true"
+                android:longClickable="false"
+                app:autoPlay="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.384"
+                app:layout_constraintStart_toStartOf="@+id/materialTextView14"
+                app:layout_constraintTop_toBottomOf="@+id/materialTextView14"
+                app:showYouTubeButton="true"
+                app:videoId="BakbEAyXoMI" />
+        </androidx.core.widget.NestedScrollView>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView15"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/credits_coding_blocks"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/scroll1"
+            app:layout_constraintStart_toStartOf="@+id/scroll1"
+            app:layout_constraintTop_toBottomOf="@+id/scroll1"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

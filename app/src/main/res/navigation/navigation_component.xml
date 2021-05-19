@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.MaterialComponents.Light"
+    app:startDestination="@id/mainMenu">
+    <fragment
+        android:id="@+id/mainMenu"
+        android:name="com.pixelbuilds.protocol.roadMap.MainMenu"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" >
+        <action
+            android:id="@+id/toAndroidDevelopment"
+            app:destination="@id/androiddevelopment" />
+        <action
+            android:id="@+id/to_iOSDevelopment"
+            app:destination="@id/iOSDevelopment" />
+        <action
+            android:id="@+id/to_webDevelopmentFragment"
+            app:destination="@id/webDevelopmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/androiddevelopment"
+        android:name="com.pixelbuilds.protocol.roadMap.androidDevelopment.AndroidDevelopment"
+        android:label="fragment_androiddevelopment"
+        tools:layout="@layout/fragment_androiddevelopment" >
+        <action
+            android:id="@+id/toMainMenu"
+            app:destination="@id/mainMenu" />
+        <action
+            android:id="@+id/to_kotlinDetails"
+            app:destination="@id/kotlinDetails" />
+        <action
+            android:id="@+id/to_javaFragemntDetails"
+            app:destination="@id/javaFragemntDetails" />
+        <action
+            android:id="@+id/to_flutterDetailsFragment"
+            app:destination="@id/flutterDetailsFragment" />
+        <action
+            android:id="@+id/to_reactNativeFragment"
+            app:destination="@id/reactNativeFragment" />
+        <action
+            android:id="@+id/action_androiddevelopment_self"
+            app:destination="@id/androiddevelopment" />
+        <action
+            android:id="@+id/to_androidStudioFragment"
+            app:destination="@id/androidStudioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kotlinDetails"
+        android:name="com.pixelbuilds.protocol.roadMap.androidDevelopment.KotlinDetails"
+        android:label="fragment_kotlin_details"
+        tools:layout="@layout/fragment_kotlin_details" >
+        <action
+            android:id="@+id/to_androiddevelopment"
+            app:destination="@id/androiddevelopment" />
+    </fragment>
+    <fragment
+        android:id="@+id/javaFragemntDetails"
+        android:name="com.pixelbuilds.protocol.roadMap.androidDevelopment.JavaFragemntDetails"
+        android:label="fragment_java_fragemnt_details"
+        tools:layout="@layout/fragment_java_fragemnt_details" >
+        <action
+            android:id="@+id/to_androiddevelopment"
+            app:destination="@id/androiddevelopment" />
+    </fragment>
+    <fragment
+        android:id="@+id/flutterDetailsFragment"
+        android:name="com.pixelbuilds.protocol.roadMap.androidDevelopment.FlutterDetailsFragment"
+        android:label="fragment_flutter_details"
+        tools:layout="@layout/fragment_flutter_details" >
+        <action
+            android:id="@+id/to_androiddevelopment"
+            app:destination="@id/androiddevelopment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reactNativeFragment"
+        android:name="com.pixelbuilds.protocol.roadMap.androidDevelopment.ReactNativeFragment"
+        android:label="fragment_react_native"
+        tools:layout="@layout/fragment_react_native" >
+        <action
+            android:id="@+id/to_androiddevelopment"
+            app:destination="@id/androiddevelopment" />
+    </fragment>
+    <fragment
+        android:id="@+id/androidStudioFragment"
+        android:name="com.pixelbuilds.protocol.roadMap.androidDevelopment.AndroidStudioFragment"
+        android:label="fragment_android_studio"
+        tools:layout="@layout/fragment_android_studio" >
+        <action
+            android:id="@+id/to_androiddevelopment"
+            app:destination="@id/androiddevelopment" />
+    </fragment>
+    <fragment
+        android:id="@+id/iOSDevelopment"
+        android:name="com.pixelbuilds.protocol.roadMap.iOSDevelopment.IOSDevelopment"
+        android:label="fragment_i_o_s_development"
+        tools:layout="@layout/fragment_i_o_s_development" >
+        <action
+            android:id="@+id/to_mainMenu"
+            app:destination="@id/mainMenu" />
+        <action
+            android:id="@+id/to_swift_Fragment"
+            app:destination="@id/swift_Fragment" />
+        <action
+            android:id="@+id/to_objectiveCFragment"
+            app:destination="@id/objectiveCFragment" />
+        <action
+            android:id="@+id/to_xCodeFragment"
+            app:destination="@id/xCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/swift_Fragment"
+        android:name="com.pixelbuilds.protocol.roadMap.iOSDevelopment.SwiftFragment"
+        android:label="fragment_swift_"
+        tools:layout="@layout/fragment_swift_" >
+        <action
+            android:id="@+id/to_iOSDevelopment"
+            app:destination="@id/iOSDevelopment" />
+    </fragment>
+    <fragment
+        android:id="@+id/objectiveCFragment"
+        android:name="com.pixelbuilds.protocol.roadMap.iOSDevelopment.ObjectiveCFragment"
+        android:label="fragment_objective_c"
+        tools:layout="@layout/fragment_objective_c" >
+        <action
+            android:id="@+id/to_iOSDevelopment"
+            app:destination="@id/iOSDevelopment" />
+    </fragment>
+    <fragment
+        android:id="@+id/xCodeFragment"
+        android:name="com.pixelbuilds.protocol.roadMap.iOSDevelopment.XCodeFragment"
+        android:label="fragment_x_code"
+        tools:layout="@layout/fragment_x_code" >
+        <action
+            android:id="@+id/to_iOSDevelopment"
+            app:destination="@id/iOSDevelopment" />
+    </fragment>
+    <fragment
+        android:id="@+id/webDevelopmentFragment"
+        android:name="com.pixelbuilds.protocol.roadMap.webDevelopment.WebDevelopmentFragment"
+        android:label="fragment_web_development"
+        tools:layout="@layout/fragment_web_development" >
+        <action
+            android:id="@+id/to_mainMenu"
+            app:destination="@id/mainMenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/otherStuffFragment"
+        android:name="com.pixelbuilds.protocol.OtherStuffFragment"
+        android:label="fragment_other_stuff"
+        tools:layout="@layout/fragment_other_stuff" >
+        <action
+            android:id="@+id/otherStuffFragment_to_mainMenu"
+            app:destination="@id/mainMenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/projectsFragment"
+        android:name="com.pixelbuilds.protocol.projects.ProjectsFragment"
+        android:label="fragment_projects"
+        tools:layout="@layout/fragment_projects" >
+        <action
+            android:id="@+id/to_androidProjects"
+            app:destination="@id/androidProjects" />
+        <action
+            android:id="@+id/to_webdevelopmentProjectsPage"
+            app:destination="@id/webdevelopmentProjectsPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/androidProjects"
+        android:name="com.pixelbuilds.protocol.projects.androidProjects.AndroidProjects"
+        android:label="fragment_android_projects"
+        tools:layout="@layout/fragment_android_projects" >
+        <action
+            android:id="@+id/to_projectsFragment"
+            app:destination="@id/projectsFragment" />
+        <action
+            android:id="@+id/to_androidBeginnerProjects"
+            app:destination="@id/androidBeginnerProjects" />
+        <action
+            android:id="@+id/to_androidAdvancedProjects"
+            app:destination="@id/androidAdvancedProjects" />
+    </fragment>
+    <fragment
+        android:id="@+id/androidBeginnerProjects"
+        android:name="com.pixelbuilds.protocol.projects.androidProjects.AndroidBeginnerProjects"
+        android:label="fragment_android_beginner_projects"
+        tools:layout="@layout/fragment_android_beginner_projects" >
+        <action
+            android:id="@+id/to_androidProjects"
+            app:destination="@id/androidProjects" />
+        <action
+            android:id="@+id/to_androiddevelopment"
+            app:destination="@id/androiddevelopment" />
+        <action
+            android:id="@+id/to_androidStudioFragment"
+            app:destination="@id/androidStudioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/androidAdvancedProjects"
+        android:name="com.pixelbuilds.protocol.projects.androidProjects.AndroidAdvancedProjects"
+        android:label="fragment_android_advanced_projects"
+        tools:layout="@layout/fragment_android_advanced_projects" />
+    <fragment
+        android:id="@+id/webdevelopmentProjectsPage"
+        android:name="com.pixelbuilds.protocol.projects.webProjects.WebdevelopmentProjectsPage"
+        android:label="fragment_webdevelopment_projects_page"
+        tools:layout="@layout/fragment_webdevelopment_projects_page" >
+        <action
+            android:id="@+id/action_webdevelopmentProjectsPage_to_projectsFragment"
+            app:destination="@id/projectsFragment" />
+        <action
+            android:id="@+id/to_webBeginnerProjectIdeas"
+            app:destination="@id/webBeginnerProjectIdeas" />
+        <action
+            android:id="@+id/to_webAdvancedProject"
+            app:destination="@id/webAdvancedProject" />
+    </fragment>
+    <fragment
+        android:id="@+id/webBeginnerProjectIdeas"
+        android:name="com.pixelbuilds.protocol.projects.webProjects.WebBeginnerProjectIdeas"
+        android:label="fragment_web_beginner_project_ideas"
+        tools:layout="@layout/fragment_web_beginner_project_ideas" >
+        <action
+            android:id="@+id/to_webdevelopmentProjectsPage"
+            app:destination="@id/webdevelopmentProjectsPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/webAdvancedProject"
+        android:name="com.pixelbuilds.protocol.projects.webProjects.WebAdvancedProject"
+        android:label="fragment_web_advanced_project"
+        tools:layout="@layout/fragment_web_advanced_project" >
+        <action
+            android:id="@+id/action_webAdvancedProject_to_webdevelopmentProjectsPage"
+            app:destination="@id/webdevelopmentProjectsPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/blogsFragment"
+        android:name="com.pixelbuilds.protocol.blogsFragment.BlogsFragment"
+        android:label="fragment_blogs"
+        tools:layout="@layout/fragment_blogs" >
+        <action
+            android:id="@+id/blogsFragment_to_mainMenu"
+            app:destination="@id/mainMenu" />
+    </fragment>
+</navigation>

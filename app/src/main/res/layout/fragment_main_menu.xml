@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:theme="@style/Theme.MaterialComponents.Light"
+    tools:context=".roadMap.MainMenu">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/jetbrainsmonomediumn"
+            android:gravity="center|top"
+            android:text="@string/roadmap"
+            android:textSize="@dimen/_25sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/android_developer"
+            android:layout_width="304dp"
+            android:layout_height="195dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toTopOf="@+id/iOS_developer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView">
+
+            <ImageView
+                android:id="@+id/android_image"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_gravity="start|center"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:contentDescription="@string/android_url" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="@dimen/_9ssp"
+                android:fontFamily="@font/jetbrainsmonobold"
+                android:gravity="center"
+                android:text="@string/android_developer"
+                android:textSize="21sp" />
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/iOS_developer"
+            android:layout_width="304dp"
+            android:layout_height="195dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toTopOf="@+id/web_developer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/android_developer">
+
+            <ImageView
+                android:id="@+id/iOS_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="start|center"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:contentDescription="@string/ios_Url" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="@dimen/_9ssp"
+                android:fontFamily="@font/jetbrainsmonobold"
+                android:gravity="center"
+                android:text="@string/ios_developer"
+                android:textSize="21sp" />
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/web_developer"
+            android:layout_width="304dp"
+            android:layout_height="195dp"
+            android:fillViewport="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iOS_developer">
+
+            <ImageView
+                android:id="@+id/web_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="start|center"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:contentDescription="@string/web_url" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="@dimen/_9ssp"
+                android:fontFamily="@font/jetbrainsmonobold"
+                android:gravity="center"
+                android:text="@string/web_developer"
+                android:textSize="21sp" />
+        </soup.neumorphism.NeumorphCardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

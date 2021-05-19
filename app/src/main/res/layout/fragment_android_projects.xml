@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:theme="@style/Theme.MaterialComponents.Light"
+    tools:context=".projects.androidProjects.AndroidProjects">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:gravity="center"
+            android:text="@string/_5_projects_to_master_android"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            android:layout_marginTop="@dimen/_14sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/scroll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView11"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView11"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView11"
+            app:showYouTubeButton="true"
+            app:videoId="mndwTFO9glI" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/credits_anuj_bhaiya"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/scroll1"
+            app:layout_constraintStart_toStartOf="@+id/scroll1"
+            app:layout_constraintTop_toBottomOf="@+id/scroll1"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:gravity="center"
+            android:text="@string/project_ideas"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView15" />
+
+
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/scroll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView12"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView12"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView12"
+            app:showYouTubeButton="true"
+            app:videoId="fsUrv4LcyvI" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/credits_keep_on_coding"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/scroll2"
+            app:layout_constraintStart_toStartOf="@+id/scroll2"
+            app:layout_constraintTop_toBottomOf="@+id/scroll2"
+            tools:ignore="MissingConstraints" />
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/android_Beginner_Projects"
+            android:layout_width="304dp"
+            android:layout_height="195dp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:fillViewport="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView16">
+
+            <ImageView
+                android:id="@+id/android_BeginnerProjects_Image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="start|center"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:contentDescription="@string/ios_Url" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="143dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="@dimen/_9ssp"
+                android:fontFamily="@font/jetbrainsmonobold"
+                android:text="@string/beginner_project_ideas"
+                android:textSize="21sp" />
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/android_Advanced_Projects"
+            android:layout_width="304dp"
+            android:layout_height="195dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fillViewport="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/android_Beginner_Projects">
+
+            <ImageView
+                android:id="@+id/android_AdvancedProjectImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="start|center"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:contentDescription="@string/ios_Url" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="143dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="@dimen/_9ssp"
+                android:fontFamily="@font/jetbrainsmonobold"
+                android:text="@string/advanced_project_ideas"
+                android:textSize="21sp" />
+        </soup.neumorphism.NeumorphCardView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:gravity="fill"
+            android:text="@string/note_these_projects_are_considered_from_various_resources"
+            android:textColor="#D54A4A"
+            android:textSize="21sp"
+            android:layout_marginStart="@dimen/_10sdp"
+ android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="@+id/android_Advanced_Projects"
+            app:layout_constraintStart_toStartOf="@+id/android_Advanced_Projects"
+            app:layout_constraintTop_toBottomOf="@+id/android_Advanced_Projects" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

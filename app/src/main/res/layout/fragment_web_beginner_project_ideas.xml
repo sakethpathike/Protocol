@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:theme="@style/Theme.MaterialComponents.Light"
+    tools:context=".projects.androidProjects.AndroidBeginnerProjects">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_9ssp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:text="@string/beginner_project_ideas"
+            android:textColor="@color/purple_500"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/androidStudioGIF"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/kotlin_gif_url"
+            app:layout_constraintBottom_toBottomOf="@+id/materialTextView2"
+            app:layout_constraintStart_toEndOf="@+id/materialTextView2"
+            app:layout_constraintTop_toTopOf="@+id/materialTextView2" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:text="@string/tools_required_"
+            android:textColor="#676C6B"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView2"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView2" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:text="@string/basic_knowledge_of_html_css_js_other_technologies_which_you_prefer"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView3"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView3" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:text="@string/pc_or_mobile_with_min_4gb_of_ram"
+            android:textSize="15sp"
+            android:layout_marginStart="@dimen/_9sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView4" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:text="@string/patience"
+            android:textSize="15sp"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView5"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView5" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView7"
+            tools:itemCount="10"
+            tools:listitem="@layout/webbeginner_items" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

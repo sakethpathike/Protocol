@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:theme="@style/Theme.MaterialComponents.Light"
+    tools:context=".roadMap.androidDevelopment.KotlinDetails">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_9ssp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:text="@string/kotlin"
+            android:textColor="@color/purple_500"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/kotlinGIF"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/kotlin_gif_url"
+            app:layout_constraintBottom_toBottomOf="@+id/materialTextView2"
+            app:layout_constraintStart_toEndOf="@+id/materialTextView2"
+            app:layout_constraintTop_toTopOf="@+id/materialTextView2" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:text="@string/why_kotlin"
+            android:textColor="#676C6B"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView2"
+            app:layout_constraintHorizontal_bias="0.14"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView4"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView4" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:text="@string/aboutKotlin"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView2"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView2" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:text="@string/modern"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView3"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView3" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:text="@string/concise"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView5"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView5" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:text="@string/safe"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView6"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView6" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:text="@string/fianlVerdict"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView7"
+            app:layout_constraintHorizontal_bias="0.032"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView7"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView7" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_9ssp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:text="@string/analysis"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView2"
+            app:layout_constraintHorizontal_bias="0.481"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView2"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView8" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:text="@string/reasons_to_try_kotlin"
+            android:textColor="#676C6B"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.047"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView10" />
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroll3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView17"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView17"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView17">
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/ytView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:keepScreenOn="true"
+                android:longClickable="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:showYouTubeButton="true"
+                app:videoId="LEi1ecigDFE" />
+        </androidx.core.widget.NestedScrollView>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView18"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/credits_android_authority"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/scroll3"
+            app:layout_constraintStart_toStartOf="@+id/scroll3"
+            app:layout_constraintTop_toBottomOf="@+id/scroll3"
+            tools:ignore="MissingConstraints" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:text="@string/kotlin_analysis"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView9" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView11"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:gravity="center"
+            android:text="@string/Kotlin_Crash_Course"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView18" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView11"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView11"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView11">
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/ytView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:keepScreenOn="true"
+                android:longClickable="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:showYouTubeButton="true"
+                app:videoId="5flXf8nuq60" />
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:text="@string/credits_traversy_media_philipp_lackner"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/scroll1"
+            app:layout_constraintStart_toStartOf="@+id/scroll1"
+            app:layout_constraintTop_toBottomOf="@+id/scroll1"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView12"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/jetbrainsmonoextrabold"
+            android:gravity="center"
+            android:text="@string/kotlin_android_crashcourse"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView15" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView12"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="@+id/materialTextView12"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView12">
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/ytView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:keepScreenOn="true"
+                android:longClickable="false"
+                app:autoPlay="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialTextView12"
+                app:showYouTubeButton="true"
+                app:videoId="BBWyXo-3JGQ" />
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jetbrainsmonobold"
+            android:foregroundGravity="center"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:gravity="center"
+            android:text="@string/credits_traversy_media_philipp_lackner"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/scroll2"
+            app:layout_constraintStart_toStartOf="@+id/scroll2"
+            app:layout_constraintTop_toBottomOf="@+id/scroll2"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

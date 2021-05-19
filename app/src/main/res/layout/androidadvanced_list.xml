@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView81"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_9ssp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:fontFamily="@font/jetbrainsmonoextrabold"
+        android:text="@string/_1_fake_caller_application"
+        android:textColor="@color/purple_500"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView91"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/jetbrainsmonobold"
+        android:text="@string/android_beginner_project1"
+        android:textSize="15sp"
+        android:layout_marginStart="@dimen/_9ssp"
+        android:layout_marginEnd="@dimen/_5ssp"
+        app:layout_constraintEnd_toEndOf="@+id/materialTextView81"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/materialTextView81"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView81" />
+</androidx.constraintlayout.widget.ConstraintLayout>
