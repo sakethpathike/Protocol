@@ -2,20 +2,15 @@ package com.pixelbuilds.protocol
 
 import android.content.Context
 import android.content.DialogInterface
-import android.content.Intent
 import android.net.ConnectivityManager
 import android.net.NetworkInfo
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Toast
-import androidx.fragment.app.FragmentActivity
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.google.android.material.snackbar.Snackbar
-import pl.droidsonroids.gif.GifDrawable
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                 DialogInterface.OnClickListener { dialog, which -> })
             alertDialogBuilder.setCancelable(false)
             alertDialogBuilder.show()
-        }else{
+        } else {
             Toast.makeText(this, "Connected To The Network", Toast.LENGTH_SHORT).show()
         }
 

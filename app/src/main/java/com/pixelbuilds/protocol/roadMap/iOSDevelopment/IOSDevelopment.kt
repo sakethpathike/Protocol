@@ -15,20 +15,20 @@ class IOSDevelopment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view= inflater.inflate(R.layout.fragment_i_o_s_development, container, false)
-        val toSwift=view.findViewById<ImageButton>(R.id.swift_knowmore)
+        val view = inflater.inflate(R.layout.fragment_i_o_s_development, container, false)
+        val toSwift = view.findViewById<ImageButton>(R.id.swift_knowmore)
         toSwift.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.to_swift_Fragment)
         }
-        val toObjC=view.findViewById<ImageButton>(R.id.objc_knowmore)
+        val toObjC = view.findViewById<ImageButton>(R.id.objc_knowmore)
         toObjC.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.to_objectiveCFragment)
         }
-        val toXCode=view.findViewById<ImageButton>(R.id.xcode_knowmore)
+        val toXCode = view.findViewById<ImageButton>(R.id.xcode_knowmore)
         toXCode.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.to_xCodeFragment)
         }
-        val ytView1=view.findViewById<YouTubePlayerView>(R.id.youtubePlayerView)
+        val ytView1 = view.findViewById<YouTubePlayerView>(R.id.youtubePlayerView)
         lifecycle.addObserver(ytView1)
         return view
     }

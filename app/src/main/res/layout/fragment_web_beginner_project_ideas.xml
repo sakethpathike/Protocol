@@ -65,11 +65,11 @@
             android:id="@+id/materialTextView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_9sdp"
             android:layout_marginTop="5dp"
             android:fontFamily="@font/jetbrainsmonobold"
             android:text="@string/pc_or_mobile_with_min_4gb_of_ram"
             android:textSize="15sp"
-            android:layout_marginStart="@dimen/_9sdp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/materialTextView4" />
 
@@ -77,10 +77,10 @@
             android:id="@+id/materialTextView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
             android:fontFamily="@font/jetbrainsmonobold"
             android:text="@string/patience"
             android:textSize="15sp"
-            android:layout_marginTop="@dimen/_5sdp"
             app:layout_constraintStart_toStartOf="@+id/materialTextView5"
             app:layout_constraintTop_toBottomOf="@+id/materialTextView5" />
 

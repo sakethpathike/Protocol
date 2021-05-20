@@ -17,8 +17,8 @@ class FlutterDetailsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view= inflater.inflate(R.layout.fragment_flutter_details, container, false)
-        val flutterGIF=view.findViewById<ImageView>(R.id.flutterGIF)
+        val view = inflater.inflate(R.layout.fragment_flutter_details, container, false)
+        val flutterGIF = view.findViewById<ImageView>(R.id.flutterGIF)
         context?.let {
             Glide.with(this)
                 .asDrawable()
@@ -26,11 +26,11 @@ class FlutterDetailsFragment : Fragment() {
                 .disallowHardwareConfig()
                 .into(flutterGIF)
         }
-        val ytView=view.findViewById<YouTubePlayerView>(R.id.ytView4)
+        val ytView = view.findViewById<YouTubePlayerView>(R.id.ytView4)
         lifecycle.addObserver(ytView)
-        val ytView1=view.findViewById<YouTubePlayerView>(R.id.ytView)
+        val ytView1 = view.findViewById<YouTubePlayerView>(R.id.ytView)
         lifecycle.addObserver(ytView1)
-        val ytView2=view.findViewById<YouTubePlayerView>(R.id.ytView2)
+        val ytView2 = view.findViewById<YouTubePlayerView>(R.id.ytView2)
         lifecycle.addObserver(ytView2)
         return view
     }

@@ -37,8 +37,8 @@
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/materialTextView3"
             android:layout_width="match_parent"
-            android:layout_marginStart="@dimen/_9sdp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_9sdp"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/jetbrainsmonoextrabold"
             android:text="@string/things_you_need_to_know_about_flutter"
@@ -48,6 +48,7 @@
             app:layout_constraintHorizontal_bias="0.14"
             app:layout_constraintStart_toStartOf="@+id/materialTextView4"
             app:layout_constraintTop_toBottomOf="@+id/materialTextView4" />
+
         <androidx.core.widget.NestedScrollView
             android:id="@+id/scroll4"
             android:layout_width="match_parent"
@@ -71,6 +72,7 @@
                 app:showYouTubeButton="true"
                 app:videoId="8pJ7lJNiGkA" />
         </androidx.core.widget.NestedScrollView>
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/materialTextView17"
             android:layout_width="wrap_content"
@@ -84,6 +86,7 @@
             app:layout_constraintStart_toStartOf="@+id/scroll4"
             app:layout_constraintTop_toBottomOf="@+id/scroll4"
             tools:ignore="MissingConstraints" />
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/materialTextView4"
             android:layout_width="match_parent"
@@ -102,8 +105,8 @@
             android:id="@+id/materialTextView9"
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginStart="@dimen/_9ssp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:fontFamily="@font/jetbrainsmonoextrabold"
             android:text="@string/analysis"
             android:textColor="@color/purple_500"
@@ -133,8 +136,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_9sdp"
-            android:layout_marginEnd="10dp"
             android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="10dp"
             android:fontFamily="@font/jetbrainsmonobold"
             android:text="@string/dart_Analysis"
             android:textSize="15sp"

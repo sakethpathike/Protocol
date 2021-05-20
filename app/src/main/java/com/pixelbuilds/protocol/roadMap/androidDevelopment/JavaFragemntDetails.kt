@@ -20,8 +20,8 @@ class JavaFragemntDetails : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view= inflater.inflate(R.layout.fragment_java_fragemnt_details, container, false)
-        val javaImage=view.findViewById<ImageView>(R.id.javaGIF)
+        val view = inflater.inflate(R.layout.fragment_java_fragemnt_details, container, false)
+        val javaImage = view.findViewById<ImageView>(R.id.javaGIF)
         context?.let {
             Glide.with(this)
                 .asDrawable()
@@ -29,9 +29,9 @@ class JavaFragemntDetails : Fragment() {
                 .disallowHardwareConfig()
                 .into(javaImage)
         }
-        val ytView1=view.findViewById<YouTubePlayerView>(R.id.ytView)
+        val ytView1 = view.findViewById<YouTubePlayerView>(R.id.ytView)
         lifecycle.addObserver(ytView1)
-        val ytView2=view.findViewById<YouTubePlayerView>(R.id.ytView2)
+        val ytView2 = view.findViewById<YouTubePlayerView>(R.id.ytView2)
         lifecycle.addObserver(ytView2)
 
         return view

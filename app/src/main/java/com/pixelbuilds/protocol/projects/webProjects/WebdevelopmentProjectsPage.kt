@@ -17,16 +17,17 @@ class WebdevelopmentProjectsPage : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view= inflater.inflate(R.layout.fragment_webdevelopment_projects_page, container, false)
-val towebBeginner=view.findViewById<NeumorphCardView>(R.id.web_Beginner_Projects)
+        val view =
+            inflater.inflate(R.layout.fragment_webdevelopment_projects_page, container, false)
+        val towebBeginner = view.findViewById<NeumorphCardView>(R.id.web_Beginner_Projects)
         towebBeginner.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.to_webBeginnerProjectIdeas)
         }
-        val towebAdvanced=view.findViewById<NeumorphCardView>(R.id.web_Advanced_Projects)
+        val towebAdvanced = view.findViewById<NeumorphCardView>(R.id.web_Advanced_Projects)
         towebAdvanced.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.to_webAdvancedProject)
         }
-        val beginnerImage=view.findViewById<ImageView>(R.id.web_BeginnerProjects_Image)
+        val beginnerImage = view.findViewById<ImageView>(R.id.web_BeginnerProjects_Image)
         context?.let {
             Glide.with(this)
                 .asDrawable()
@@ -35,7 +36,7 @@ val towebBeginner=view.findViewById<NeumorphCardView>(R.id.web_Beginner_Projects
                 .disallowHardwareConfig()
                 .into(beginnerImage)
         }
-        val advancedImage=view.findViewById<ImageView>(R.id.web_AdvancedProjectImage)
+        val advancedImage = view.findViewById<ImageView>(R.id.web_AdvancedProjectImage)
         context?.let {
             Glide.with(this)
                 .asDrawable()

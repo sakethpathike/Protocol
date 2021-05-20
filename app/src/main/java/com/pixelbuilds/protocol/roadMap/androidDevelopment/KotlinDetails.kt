@@ -11,19 +11,19 @@ import com.bumptech.glide.Glide
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
 import com.pixelbuilds.protocol.R
 
-class KotlinDetails : Fragment(){
+class KotlinDetails : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view= inflater.inflate(R.layout.fragment_kotlin_details, container, false)
-        val kotlinImage=view.findViewById<ImageView>(R.id.kotlinGIF)
-        val ytView=view.findViewById<YouTubePlayerView>(R.id.ytView)
+        val view = inflater.inflate(R.layout.fragment_kotlin_details, container, false)
+        val kotlinImage = view.findViewById<ImageView>(R.id.kotlinGIF)
+        val ytView = view.findViewById<YouTubePlayerView>(R.id.ytView)
         lifecycle.addObserver(ytView)
-        val ytView2=view.findViewById<YouTubePlayerView>(R.id.ytView2)
+        val ytView2 = view.findViewById<YouTubePlayerView>(R.id.ytView2)
         lifecycle.addObserver(ytView2)
-        val ytView3=view.findViewById<YouTubePlayerView>(R.id.ytView3)
+        val ytView3 = view.findViewById<YouTubePlayerView>(R.id.ytView3)
         lifecycle.addObserver(ytView3)
         context?.let {
             Glide.with(this)

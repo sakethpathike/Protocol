@@ -17,8 +17,8 @@ class SwiftFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view= inflater.inflate(R.layout.fragment_swift_, container, false)
-        val swiftIMage=view.findViewById<ImageView>(R.id.swiftGIF)
+        val view = inflater.inflate(R.layout.fragment_swift_, container, false)
+        val swiftIMage = view.findViewById<ImageView>(R.id.swiftGIF)
         context?.let {
             Glide.with(this)
                 .asDrawable()
@@ -27,8 +27,8 @@ class SwiftFragment : Fragment() {
                 .disallowHardwareConfig()
                 .into(swiftIMage)
         }
-        val ytView1=view.findViewById<YouTubePlayerView>(R.id.ytView)
-        val ytView2=view.findViewById<YouTubePlayerView>(R.id.ytView1)
+        val ytView1 = view.findViewById<YouTubePlayerView>(R.id.ytView)
+        val ytView2 = view.findViewById<YouTubePlayerView>(R.id.ytView1)
         lifecycle.addObserver(ytView1)
         lifecycle.addObserver(ytView2)
         return view

@@ -16,8 +16,8 @@ class ReactNativeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view= inflater.inflate(R.layout.fragment_react_native, container, false)
-        val reactNativeGIF=view.findViewById<ImageView>(R.id.reactNativeGIF)
+        val view = inflater.inflate(R.layout.fragment_react_native, container, false)
+        val reactNativeGIF = view.findViewById<ImageView>(R.id.reactNativeGIF)
         context?.let {
             Glide.with(this)
                 .asDrawable()
@@ -26,7 +26,7 @@ class ReactNativeFragment : Fragment() {
                 .disallowHardwareConfig()
                 .into(reactNativeGIF)
         }
-        val ytView=view.findViewById<YouTubePlayerView>(R.id.ytView)
+        val ytView = view.findViewById<YouTubePlayerView>(R.id.ytView)
         lifecycle.addObserver(ytView)
         return view
     }

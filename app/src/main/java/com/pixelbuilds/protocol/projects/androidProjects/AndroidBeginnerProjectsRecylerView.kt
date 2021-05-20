@@ -7,19 +7,23 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.textview.MaterialTextView
 import com.pixelbuilds.protocol.R
 
-class AndroidBeginnerProjectsRecylerView(private var title:List<String>,private var description:List<String>) :
+class AndroidBeginnerProjectsRecylerView(
+    private var title: List<String>,
+    private var description: List<String>
+) :
     RecyclerView.Adapter<AndroidBeginnerProjectsRecylerView.ViewHolder>() {
 
-    inner class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
-val itemTitle: MaterialTextView =itemView.findViewById(R.id.materialTextView8)
-val itemDescription: MaterialTextView =itemView.findViewById(R.id.materialTextView9)
+    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val itemTitle: MaterialTextView = itemView.findViewById(R.id.materialTextView8)
+        val itemDescription: MaterialTextView = itemView.findViewById(R.id.materialTextView9)
     }
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
     ): ViewHolder {
-val viewHolder=LayoutInflater.from(parent.context).inflate(R.layout.androidbeginnerprojects_item,parent,false)
+        val viewHolder = LayoutInflater.from(parent.context)
+            .inflate(R.layout.androidbeginnerprojects_item, parent, false)
         return ViewHolder(viewHolder)
     }
 
@@ -27,11 +31,11 @@ val viewHolder=LayoutInflater.from(parent.context).inflate(R.layout.androidbegin
         holder: ViewHolder,
         position: Int
     ) {
-holder.itemTitle.text=title[position]
-        holder.itemDescription.text=description[position]
+        holder.itemTitle.text = title[position]
+        holder.itemDescription.text = description[position]
     }
 
     override fun getItemCount(): Int {
-         return title.size
+        return title.size
     }
 }

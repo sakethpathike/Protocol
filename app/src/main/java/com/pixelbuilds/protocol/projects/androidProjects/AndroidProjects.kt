@@ -17,16 +17,18 @@ class AndroidProjects : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view= inflater.inflate(R.layout.fragment_android_projects, container, false)
-        val toAndroidBeginnerProjects=view.findViewById<NeumorphCardView>(R.id.android_Beginner_Projects)
+        val view = inflater.inflate(R.layout.fragment_android_projects, container, false)
+        val toAndroidBeginnerProjects =
+            view.findViewById<NeumorphCardView>(R.id.android_Beginner_Projects)
         toAndroidBeginnerProjects.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.to_androidBeginnerProjects)
         }
-        val toAndroidAdvancedProjects=view.findViewById<NeumorphCardView>(R.id.android_Advanced_Projects)
+        val toAndroidAdvancedProjects =
+            view.findViewById<NeumorphCardView>(R.id.android_Advanced_Projects)
         toAndroidAdvancedProjects.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.to_androidAdvancedProjects)
         }
-        val beginnerImage=view.findViewById<ImageView>(R.id.android_BeginnerProjects_Image)
+        val beginnerImage = view.findViewById<ImageView>(R.id.android_BeginnerProjects_Image)
         context?.let {
             Glide.with(this)
                 .asDrawable()
@@ -35,7 +37,7 @@ class AndroidProjects : Fragment() {
                 .disallowHardwareConfig()
                 .into(beginnerImage)
         }
-        val advancedImage=view.findViewById<ImageView>(R.id.android_AdvancedProjectImage)
+        val advancedImage = view.findViewById<ImageView>(R.id.android_AdvancedProjectImage)
         context?.let {
             Glide.with(this)
                 .asDrawable()

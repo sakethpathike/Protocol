@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/recyclerView1"
     android:layout_width="match_parent"
-    tools:listitem="@layout/androidadvanced_list"
     android:layout_height="match_parent"
-    tools:context=".projects.androidProjects.AndroidAdvancedProjects"/>
+    tools:context=".projects.androidProjects.AndroidAdvancedProjects"
+    tools:listitem="@layout/androidadvanced_list" />
 

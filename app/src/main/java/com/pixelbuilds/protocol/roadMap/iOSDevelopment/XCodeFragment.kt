@@ -12,23 +12,23 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTube
 import com.pixelbuilds.protocol.R
 
 class XCodeFragment : Fragment() {
-       override fun onCreateView(
+    override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view= inflater.inflate(R.layout.fragment_x_code, container, false)
-           val xCodeLogo=view.findViewById<ImageView>(R.id.XCodeGIF)
-           context?.let {
-               Glide.with(this)
-                   .asDrawable()
-                   .load(Uri.parse("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_FjUJdaBgkEuOZsj2x1q7OncZHKbjIBOGbA&usqp=CAU"))
-                   .centerCrop()
-                   .disallowHardwareConfig()
-                   .into(xCodeLogo)
-           }
-           val ytView=view.findViewById<YouTubePlayerView>(R.id.ytView)
-           lifecycle.addObserver(ytView)
-           return view
-       }
+        val view = inflater.inflate(R.layout.fragment_x_code, container, false)
+        val xCodeLogo = view.findViewById<ImageView>(R.id.XCodeGIF)
+        context?.let {
+            Glide.with(this)
+                .asDrawable()
+                .load(Uri.parse("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_FjUJdaBgkEuOZsj2x1q7OncZHKbjIBOGbA&usqp=CAU"))
+                .centerCrop()
+                .disallowHardwareConfig()
+                .into(xCodeLogo)
+        }
+        val ytView = view.findViewById<YouTubePlayerView>(R.id.ytView)
+        lifecycle.addObserver(ytView)
+        return view
+    }
 
 }

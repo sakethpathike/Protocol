@@ -21,15 +21,15 @@ open class MainMenu : Fragment() {
         val androidImageview = view.findViewById<ImageView>(R.id.android_image)
         val iosImageview = view.findViewById<ImageView>(R.id.iOS_image)
         val webImageview = view.findViewById<ImageView>(R.id.web_image)
-        val androidCard=view.findViewById<NeumorphCardView>(R.id.android_developer)
+        val androidCard = view.findViewById<NeumorphCardView>(R.id.android_developer)
         androidCard.setOnClickListener {
-        Navigation.findNavController(view).navigate(R.id.toAndroidDevelopment)
+            Navigation.findNavController(view).navigate(R.id.toAndroidDevelopment)
         }
-        val iOSCard=view.findViewById<NeumorphCardView>(R.id.iOS_developer)
+        val iOSCard = view.findViewById<NeumorphCardView>(R.id.iOS_developer)
         iOSCard.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.to_iOSDevelopment)
         }
-        val webCard=view.findViewById<NeumorphCardView>(R.id.web_developer)
+        val webCard = view.findViewById<NeumorphCardView>(R.id.web_developer)
         webCard.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.to_webDevelopmentFragment)
         }
@@ -41,7 +41,7 @@ open class MainMenu : Fragment() {
                 .disallowHardwareConfig()
                 .into(androidImageview)
         }
-        context?.let{
+        context?.let {
             Glide.with(this)
                 .asDrawable()
                 .centerCrop()
@@ -50,7 +50,7 @@ open class MainMenu : Fragment() {
                 .into(iosImageview)
         }
 
-        context?.let{
+        context?.let {
             Glide.with(this)
                 .asDrawable()
                 .centerCrop()
@@ -58,6 +58,6 @@ open class MainMenu : Fragment() {
                 .disallowHardwareConfig()
                 .into(webImageview)
         }
-                return view
+        return view
     }
 }

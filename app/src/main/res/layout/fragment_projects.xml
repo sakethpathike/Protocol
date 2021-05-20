@@ -41,6 +41,7 @@
                 android:text="@string/android_development_projects"
                 android:textSize="21sp" />
         </soup.neumorphism.NeumorphCardView>
+
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/web_Projects"
             android:layout_width="304dp"

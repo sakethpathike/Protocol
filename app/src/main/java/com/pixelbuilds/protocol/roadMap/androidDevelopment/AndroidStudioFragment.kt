@@ -12,23 +12,23 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTube
 import com.pixelbuilds.protocol.R
 
 class AndroidStudioFragment : Fragment() {
-   override fun onCreateView(
+    override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view= inflater.inflate(R.layout.fragment_android_studio, container, false)
-        val androidStudioLogo=view.findViewById<ImageView>(R.id.androidStudioGIF)
-       val ytView=view.findViewById<YouTubePlayerView>(R.id.ytView)
-       lifecycle.addObserver(ytView)
-       context?.let {
-           Glide.with(this)
-               .asDrawable()
-               .load(Uri.parse("https://1.bp.blogspot.com/-LgTa-xDiknI/X4EflN56boI/AAAAAAAAPuk/24YyKnqiGkwRS9-_9suPKkfsAwO4wHYEgCLcBGAsYHQ/s0/image9.png"))
-               .centerCrop()
-               .disallowHardwareConfig()
-               .into(androidStudioLogo)
-       }
+        val view = inflater.inflate(R.layout.fragment_android_studio, container, false)
+        val androidStudioLogo = view.findViewById<ImageView>(R.id.androidStudioGIF)
+        val ytView = view.findViewById<YouTubePlayerView>(R.id.ytView)
+        lifecycle.addObserver(ytView)
+        context?.let {
+            Glide.with(this)
+                .asDrawable()
+                .load(Uri.parse("https://1.bp.blogspot.com/-LgTa-xDiknI/X4EflN56boI/AAAAAAAAPuk/24YyKnqiGkwRS9-_9suPKkfsAwO4wHYEgCLcBGAsYHQ/s0/image9.png"))
+                .centerCrop()
+                .disallowHardwareConfig()
+                .into(androidStudioLogo)
+        }
         return view
-   }
+    }
 
 }

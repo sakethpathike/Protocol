@@ -37,8 +37,8 @@
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/materialTextView3"
             android:layout_width="match_parent"
-            android:layout_marginStart="@dimen/_9sdp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_9sdp"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/jetbrainsmonoextrabold"
             android:text="@string/things_you_need_to_know_about_webdevelopment"
@@ -48,6 +48,7 @@
             app:layout_constraintHorizontal_bias="0.14"
             app:layout_constraintStart_toStartOf="@+id/materialTextView4"
             app:layout_constraintTop_toBottomOf="@+id/materialTextView4" />
+
         <androidx.core.widget.NestedScrollView
             android:id="@+id/scroll4"
             android:layout_width="match_parent"
@@ -71,6 +72,7 @@
                 app:showYouTubeButton="true"
                 app:videoId="ysEN5RaKOlA" />
         </androidx.core.widget.NestedScrollView>
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/materialTextView17"
             android:layout_width="wrap_content"
@@ -84,6 +86,7 @@
             app:layout_constraintStart_toStartOf="@+id/scroll4"
             app:layout_constraintTop_toBottomOf="@+id/scroll4"
             tools:ignore="MissingConstraints" />
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/materialTextView4"
             android:layout_width="match_parent"
@@ -102,8 +105,8 @@
             android:id="@+id/materialTextView9"
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginStart="@dimen/_9ssp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:fontFamily="@font/jetbrainsmonoextrabold"
             android:text="@string/analysis"
             android:textColor="@color/purple_500"
@@ -127,12 +130,13 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/materialTextView9" />
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/materialTextView26"
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginStart="@dimen/_9ssp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:fontFamily="@font/jetbrainsmonoextrabold"
             android:text="@string/frontend_development"
             android:textColor="@color/purple_500"
@@ -141,13 +145,14 @@
             app:layout_constraintHorizontal_bias="0.481"
             app:layout_constraintStart_toStartOf="@+id/materialTextView10"
             app:layout_constraintTop_toBottomOf="@+id/materialTextView10" />
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/materialTextView13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_9sdp"
-            android:layout_marginEnd="10dp"
             android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="10dp"
             android:fontFamily="@font/jetbrainsmonobold"
             android:text="@string/frontEnd_Analysis"
             android:textSize="15sp"
@@ -155,13 +160,14 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/materialTextView26" />
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/materialTextView20"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_9sdp"
-            android:layout_marginEnd="10dp"
             android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="10dp"
             android:fontFamily="@font/jetbrainsmonoextrabold"
             android:text="@string/frontendBelow"
             android:textSize="15sp"
@@ -169,13 +175,14 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/materialTextView13" />
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/materialTextView21"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_9sdp"
-            android:layout_marginEnd="10dp"
             android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="10dp"
             android:fontFamily="@font/jetbrainsmonobold"
             android:text="@string/html_txt"
             android:textSize="15sp"
@@ -183,6 +190,7 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/materialTextView20" />
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/materialTextView23"
             android:layout_width="match_parent"
@@ -197,6 +205,7 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/materialTextView21" />
+
         <androidx.core.widget.NestedScrollView
             android:id="@+id/scroll5"
             android:layout_width="match_parent"
@@ -233,13 +242,14 @@
             app:layout_constraintStart_toStartOf="@+id/scroll5"
             app:layout_constraintTop_toBottomOf="@+id/scroll5"
             tools:ignore="MissingConstraints" />
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/materialTextView24"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_9sdp"
-            android:layout_marginEnd="10dp"
             android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="10dp"
             android:fontFamily="@font/jetbrainsmonobold"
             android:text="@string/css_txt"
             android:textSize="15sp"
@@ -247,6 +257,7 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/materialTextView22" />
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/materialTextView11"
             android:layout_width="match_parent"
@@ -299,13 +310,14 @@
             app:layout_constraintStart_toStartOf="@+id/scroll1"
             app:layout_constraintTop_toBottomOf="@+id/scroll1"
             tools:ignore="MissingConstraints" />
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/materialTextView25"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_9sdp"
-            android:layout_marginEnd="10dp"
             android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="10dp"
             android:fontFamily="@font/jetbrainsmonobold"
             android:text="@string/js_txt"
             android:textSize="15sp"
@@ -313,6 +325,7 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/materialTextView15" />
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/materialTextView12"
             android:layout_width="match_parent"
@@ -366,12 +379,13 @@
             app:layout_constraintStart_toStartOf="@+id/scroll2"
             app:layout_constraintTop_toBottomOf="@+id/scroll2"
             tools:ignore="MissingConstraints" />
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/materialTextView27"
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginStart="@dimen/_9ssp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:fontFamily="@font/jetbrainsmonoextrabold"
             android:text="@string/backend_development"
             android:textColor="@color/purple_500"
@@ -380,13 +394,14 @@
             app:layout_constraintHorizontal_bias="0.481"
             app:layout_constraintStart_toStartOf="@+id/materialTextView16"
             app:layout_constraintTop_toBottomOf="@+id/materialTextView16" />
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/materialTextView28"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_9sdp"
-            android:layout_marginEnd="10dp"
             android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="10dp"
             android:fontFamily="@font/jetbrainsmonobold"
             android:text="@string/backend_Analysis"
             android:textSize="15sp"
@@ -394,13 +409,14 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/materialTextView27" />
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/materialTextView29"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_9sdp"
-            android:layout_marginEnd="10dp"
             android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="10dp"
             android:fontFamily="@font/jetbrainsmonoextrabold"
             android:text="@string/the_back_end_portion_is_built_by_using_some_languages_which_are_discussed_below"
             android:textSize="15sp"
@@ -408,13 +424,14 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/materialTextView28" />
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/materialTextView30"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_9sdp"
-            android:layout_marginEnd="10dp"
             android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="10dp"
             android:fontFamily="@font/jetbrainsmonoextrabold"
             android:text="@string/warning"
             android:textColor="#E44949"
@@ -423,6 +440,7 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/materialTextView29" />
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/materialTextView31"
             android:layout_width="wrap_content"
@@ -436,6 +454,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/materialTextView30" />
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/materialTextView32"
             android:layout_width="wrap_content"
@@ -449,6 +468,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/materialTextView31" />
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/materialTextView33"
             android:layout_width="wrap_content"
@@ -509,8 +529,8 @@
             android:id="@+id/materialTextView37"
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginStart="@dimen/_9ssp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:fontFamily="@font/jetbrainsmonoextrabold"
             android:text="@string/conclusion"
             android:textColor="@color/purple_500"
@@ -519,6 +539,7 @@
             app:layout_constraintHorizontal_bias="0.481"
             app:layout_constraintStart_toStartOf="@+id/materialTextView36"
             app:layout_constraintTop_toBottomOf="@+id/materialTextView36" />
+
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

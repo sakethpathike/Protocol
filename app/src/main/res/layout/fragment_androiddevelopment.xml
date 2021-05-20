@@ -202,9 +202,9 @@
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_marginStart="@dimen/_9sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:fontFamily="@font/jetbrainsmonoextrabold"
             android:gravity="center"
-            android:layout_marginTop="@dimen/_10sdp"
             android:text="@string/roadmap_overview"
             android:textColor="@color/purple_500"
             android:textSize="20sp"
@@ -237,6 +237,7 @@
                 app:showYouTubeButton="true"
                 app:videoId="BakbEAyXoMI" />
         </androidx.core.widget.NestedScrollView>
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/materialTextView15"
             android:layout_width="wrap_content"

@@ -142,14 +142,7 @@
     <string name="frontend_vs_backend">Frontend VS Backend</string>
     <string name="basic_knowledge_of_html_css_js_other_technologies_which_you_prefer"><![CDATA[-> Basic Knowledge Of HTML,CSS,JS/Other Technologies Which You Prefer.]]></string>
     <string name="pc_or_mobile_with_min_4gb_of_ram"><![CDATA[-> PC Or Mobile With Min 4GB Of RAM]]></string>
-    <string name="namaste">Namaste</string>
     <string name="swiftui_crash_course">SwiftUI Crash Course</string>
-    <string name="about">About</string>
-    <string name="about_developer">About Developer</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="a_complete_linux_guide_for_beginners">A Complete Linux Guide For Beginners</string>
-    <string name="internet_issue">Seems Like You Didn\'t Connected To The Internet Or Connected To The Slow Connection, Please Connect To The Internet To Access Full-Fledged Features🤗</string>
-    <string name="try_again">Try Again</string>
-    <string name="skip">Skip</string>
 </resources>
